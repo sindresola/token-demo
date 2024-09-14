@@ -1,5 +1,6 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from './page.module.css';
+import { Flex, Text, Button } from '@radix-ui/themes';
 
 export default function Home() {
   return (
@@ -45,6 +46,10 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <Flex direction="column" gap="2">
+          <Text>Hello from Radix Themes :)</Text>
+          <Button>Let&apos;s go</Button>
+        </Flex>
       </main>
       <footer className={styles.footer}>
         <a
